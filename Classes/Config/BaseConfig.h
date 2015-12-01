@@ -42,3 +42,4 @@ extern std::string s_language;
 extern std::string s_touchfile;
 extern bool bIsPaused;
 extern bool bIsGaming;
+extern bool bIsResult;

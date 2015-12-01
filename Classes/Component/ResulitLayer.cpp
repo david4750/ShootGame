@@ -27,12 +27,14 @@ ResulitLayer::~ResulitLayer()
 
 void ResulitLayer::onEnter()
 {	
+	bIsResult = true;
 	CCTouchDispatcher::sharedDispatcher()->addTargetedDelegate(this, -128, true);
 	CCLayer::onEnter();
 }
 
 void ResulitLayer::onExit()
 {
+	bIsResult = false;
 	CCTouchDispatcher::sharedDispatcher()->removeDelegate(this);
 	CCLayer::onExit();
 }
